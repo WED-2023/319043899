@@ -2,192 +2,285 @@
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="style.css" />
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 </head>
 <body>
-<div id="menu">
-<li><a href="#about">About Me</a></li>
-<li><a href="#photos">My Photos</a></li>
-<li><a href="#playlist">My Playlist</a></li>
-<li><a href="#like">Like</a></li>
-<li><a href="#qrcoder">QR code</a></li>
-<li><a href="#spa">Q&A</a></li>
-<li><a href="#contact">Contact Me</a></li>
-</div>
-		  
+  <!-- profile picture-->
+  <img src="louis-images/profile2.png" alt="Profile Picture" id="profile-pic">
+
+  <div id="menu">
+    <a href="#about">About Me</a><span class="separator">|</span>
+    <a href="#photos">My Photos</a><span class="separator">|</span>
+    <a href="#playlist">My Playlist</a><span class="separator">|</span>
+    <a href="#like">Like</a><span class="separator">|</span>
+    <a href="#qrcoder">QR code</a><span class="separator">|</span>
+    <a href="#qa">Q&A</a><span class="separator">|</span>
+    <a href="#contact">Contact Me</a>
+  </div>
+
+  <!-- About me section -->
 <section id="about" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-about me
-<br/>
-<br/>
-<br/>
+
+  <h2>About me</h2>
+  <p>I am Louis Singer, born in 1947 in Mendoza, Argentina, to a farming family. My father, Juan, was a grape grower for wine in a small family vineyard, and my mother, Rosa, was a seamstress. Our home was filled with joy and Argentine culture, with the scent of empanadas and the sounds of tango in the background. As a child, I loved nature and would spend hours in the fields with my father, learning about grape growing and helping with the harvest.</p>
+  <br/>
+  <p>In 1962, when I was 15, my family decided to immigrate to Israel. The move was not easy — the language was unfamiliar, the landscapes were different, but I saw it as an adventure and a new opportunity. We arrived in the moshav of Alonim in the Jezreel Valley, a place that reminded me somewhat of the fields from my childhood.</p>
+  <br/>
+  <p>At the age of 18, I enlisted as a combat soldier in the Golani Brigade, and during the Six-Day War, I fought in the Sinai Peninsula. I am proud of my military service, and during my time in the army, I made hard work and dedication to the mission central elements of my worldview.</p>
+  <br/>
+  <p>After my military service, I immediately began working in agriculture, and not long after, I started studying agriculture at the University of Tel-Hai, which provided me with additional tools to advance and progress in the field. Over the years, I became the manager of field crops in the moshav. Throughout the years, I blended tradition with innovation, founded new agricultural ventures, and introduced advanced farming techniques.</p>
+  <br/>
+  <p>Today, at the age of 78, I still work in the fields every morning, with the same love for the land and sense of mission. I believe in hard work, consistency, and optimism. I am proud to be a part of the moshav and to pass on my knowledge to the next generation. My life has been a journey full of challenges and successes, and I have always maintained a strong connection to my roots, both in the land and in agriculture.</p>
+  <br/>
+  <br/>
+  <br/>
+
 </section>
 
+  <!-- Photos section -->
 <section id="photos" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-my photos
-<br/>
-<br/>
-<br/>
+  <h2>Photos</h2>
+  <img src="louis-images/pic1.png" alt="Profile Picture" id="pic1" class="photos">
+  <img src="louis-images/profile.png" alt="Profile Picture" id="profile-pic1" class="photos">
+  <img src="louis-images/profile2.png" alt="Profile Picture" id="profile-pic2" class="photos">
+  <br/>
+  <br/>
+  <br/>
 </section>
 
+  <!-- My playlist section -->
 <section id="playlist" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-my playlist
-<br/>
-<br/>
-<br/>
+  <h2>My playlist</h2>
+  <div class="playlist-container">
+    <iframe style="border-radius:12px" 
+            src="https://open.spotify.com/embed/playlist/1mimGaLbQjU0S5WQgkVbsa?utm_source=generator" 
+            width="100%" 
+            height="352" 
+            frameborder="0" 
+            allowfullscreen="" 
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+            loading="lazy">
+    </iframe>
+  </div>
 </section>
 
+  <!-- Like page section -->
 <section id="like" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-give me a like
-<br/>
-<br/>
-<br/>
+  <h2>Give me a like</h2>
+  <button id="like-btn">👍 Like</button>
+  <div id="like-count">Likes: 0 </div>
 </section>
 
+  <br/>
+  <br/>
+  <br/>
+</section>
+
+  <!-- QR section -->
 <section id="qrcoder" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-scan my code
-<br/>
-<br/>
-<br/>
+  <h2>Scan my code</h2>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
 </section>
 
-<section id="spa" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-ans
-<br/>
-<br/>
-<br/>
-</section>
+  <!-- Q&A section -->
+<section id="qa" class="section">
+  <h2>Q&A</h2>
+  <table class="styled-table">
+    <thead>
+        <th>Feature</th>
+        <th>Web1</th>
+        <th>Web2</th>
+        <th>Web3</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>interaction</td>
+        <td>There is almost no interactivity. The user just reads static content without influencing it.</td>
+        <td>users can comment, share, like, and create content.</td>
+        <td>Provides personalized origin information using machine learning and AI</td>
+      </tr>
+      <tr>
+        <td>Technology</td>
+        <td>Simple HTML, no JavaScript or advanced CSS.</td>
+        <td>Using HTML5, CSS3, JavaScript, ajax, and using API's</td>
+        <td>Based on blockchain and smart contracts</td>
+      </tr>
+      <tr>
+        <td>Control Over Data</td>
+        <td>The user has no control over the information.</td>
+        <td>Users produce content, but the information belongs to the platforms.</td>
+        <td>Users maintain full control over their information through decentralized technologies.</td>
+      </tr>
+    </tbody>
+  </table>
 
-<section id="contact" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-contact me
-<br/>
-<br/>
-<br/>
-</section>
+<br>
+
+<div class = "use-case-title">
+
+<br>
+
+  <h3>Use Case: Searching for Pneumonia Symptoms</h3>
+</div>
+  <div class="use-case-block1">
+    <h3>WEB1:</h3>
+    <p>
+      The user types “Symptoms of Pneumonia” into a search engine and receives a result of a simple HTML page on a medical website, which contains a list of medical symptoms (e.g.: fever, cough, shortness of breath).<br>
+      There is no option to comment, ask questions, or get updated information from other users experiences.
+    </p>
+  </div>
+
+  <div class="use-case-block2">
+    <h3>WEB2:</h3>
+    <p>
+      The user performs the same search, but arrives at a discussion in a medical Facebook group or a blog post by a former patient, where people share their experiences with pneumonia symptoms – when they appeared, what were the exceptions, and how they coped.<br>
+      The user can comment, ask questions, and have a conversation with others.<br>
+      However, the information may not be accurate or medically verified.
+    </p>
+  </div>
+
+  <div class="use-case-block3">
+    <h3>WEB3:</h3>
+    <p>
+      The user performs the search and receives information from a decentralized medical platform, where patients and professionals share symptoms that have been verified by the system.<br>
+      Each report is recorded on the blockchain – users can see which symptoms have appeared in people of a similar age, similar geographical location, or with similar underlying diseases, without compromising their privacy.<br>
+      The information is verified, secure, transparent and anonymous.
+    </p>
+  </div>
+
+  <br/>
+
+  <!-- Contact Me section -->
+  <section id="contact" class="section">
+    <h2>Contact Us</h2>
+  
+    <form id="contact-form" action="mailto:ido252628@gmail.com" method="post" enctype="text/plain">
+
+      <!-- sender Email -->
+      <label for="email">Your Email:</label>
+      <input type="email" id="email" name="email" required>
+  
+      <!-- body of the massage -->
+      <label for="message">Your Message:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+  
+      <div id="emoji-container">
+        <button type="button" class="emoji-btn" onclick="addEmoji('😊')">😊</button>
+        <button type="button" class="emoji-btn" onclick="addEmoji('😄')">😄</button>
+        <button type="button" class="emoji-btn" onclick="addEmoji('😎')">😎</button>
+        <button type="button" class="emoji-btn" onclick="addEmoji('😉')">😉</button>
+        <button type="button" class="emoji-btn" onclick="addEmoji('😍')">😍</button>
+        <button type="button" class="emoji-btn" onclick="addEmoji('😜')">😜</button>
+        <button type="button" class="emoji-btn" onclick="addEmoji('😢')">😢</button>
+        <button type="button" class="emoji-btn" onclick="addEmoji('😡')">😡</button>
+      </div>
+  
+       <!-- send button -->
+      <button type="submit" id="send-btn">Send</button>
+    </form>
+  </section>
+  
+  
 
 
+<!-- Slow scrolling effect-->
 <script type="text/javascript">
-$(function(){
-  $("#nav a").click(function(e){
-    e.preventDefault();
-    $('html,body').scrollTo(this.hash,this.hash); 
+  $(function(){
+    
+    $("#menu a").click(function(e){
+      e.preventDefault();  
+      var target = $(this.hash); 
+      var offset = 50;  
+
+      $('html, body').animate({
+        scrollTop: target.offset().top - offset  
+      }, 1000);  
+    });
   });
-});
 </script>
+
+
+<!-- Makes an effect when pointing to buttons in the menu-->
 <script type="text/javascript">
- $(document).scroll(function() {
-    $('#menu').toggle($(this).scrollTop()>1000)
- });​
- </script>
+  $(function(){
+    
+    $("#menu a").hover(
+      function() {
+        
+        $(this).css({
+          "transform": "scale(0.9)", 
+          "background-color": "#6ca885", 
+          "color": "white", 
+        });
+      }, 
+      function() {
+
+        $(this).css({
+          "background-color": "", 
+          "color": "",  
+          "transform": "" 
+        });
+      }
+    );
+  });
+</script>
+
+<!-- like button script-->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const likeBtn = document.getElementById("like-btn");
+    const likeCount = document.getElementById("like-count");
+
+    let likes = parseInt(localStorage.getItem("likes")) || 0;
+    let liked = localStorage.getItem("liked") === "true";
+
+    likeCount.innerText = `Likes: ${likes}`;
+
+    if (liked) {
+      likeBtn.disabled = true;
+      likeBtn.innerText = "❤️ Liked";
+    }
+
+    likeBtn.addEventListener("click", function () {
+      if (!liked) {
+        likes += 1;
+        localStorage.setItem("likes", likes);
+        localStorage.setItem("liked", "true");
+        likeCount.innerText = `Likes: ${likes} `;
+        likeBtn.disabled = true;
+        likeBtn.innerText = "❤️ Liked";
+      }
+    });
+  });
+</script>
+<!-- add the emoji to the massage body-->
+<script>
+  function addEmoji(emoji) {
+  const messageField = document.getElementById('message');
+  messageField.value += emoji; 
+  messageField.focus(); 
+}
+</script>
+
 </body>
 </html>
