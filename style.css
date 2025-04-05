@@ -230,6 +230,20 @@ button:hover {
   background-color: #45a049;
 }
 
+.qr-image {
+	width: 200px;
+	height: 200px;
+	margin: 20px auto;
+	display: block;
+  }
+  .centered-text {
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.2em;
+	color: #2c774b;  /* אפשר לשנות את הצבע אם צריך */
+  }
+	
+
   
   
   
