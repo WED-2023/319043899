@@ -16,5 +16,5 @@ This website showcases a personal profile for Louis Singer, a fictional characte
 
 🔗 [https://wed-2023.github.io/319043899/](https://wed-2023.github.io/319043899/)
 
-Name: Ido Bergerzon
+Name: Ido Bergerzon  
 ID: 319043899
